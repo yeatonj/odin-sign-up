@@ -2,6 +2,7 @@
     --primary-bg: MintCream;
     --secondary-bg: Snow;
     --attribution-font-color: rgba(255, 255, 255, 0.704);
+    --content-left-pad: 40px;
 }
 
 .faculty-glyphic-regular {
@@ -58,6 +59,20 @@ body {
     gap: 10px;
 }
 
+.overview, fieldset h2, .login-container, .form-row {
+    padding-left: var(--content-left-pad);
+}
+
+.overview {
+    margin-right: 10vw;
+    min-width: 380px;
+}
+
+.form-container button {
+    margin-left: var(--content-left-pad);
+    margin-top: 20px;
+}
+
 .attribution a {
     color: var(--attribution-font-color);
 }
@@ -68,7 +83,6 @@ body {
     justify-content:space-evenly;
     flex: auto;
     text-align: left;
-    padding-left: 30px;
 }
 
 .form-row {
@@ -76,16 +90,36 @@ body {
     flex: auto;
     text-align: left;
     gap: 20px;
+    margin-bottom: 20px;
+    padding-left: var(--content-left-pad);
 }
 
 label {
     display: block;
+    font-size: x-small;
+    font-weight: bold;
 }
 
 fieldset {
     background-color: var(--secondary-bg);
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: rgba(128, 128, 128, 0.601) 0px 4px 4px;
 }
 
 fieldset h2 {
     text-align: left;
+}
+
+input {
+    border: solid #E5E7EB 1px;
+}
+
+input:invalid {
+    border: solid red 2px;
+}
+
+input:focus {
+    border: solid blue 2px;
 }
