@@ -1,6 +1,6 @@
 :root {
     --primary-bg: MintCream;
-    --secondary-bg: GhostWhite;
+    --secondary-bg: Snow;
 }
 
 body {
@@ -39,6 +39,21 @@ body {
     text-align: center;
 }
 
-.form-container {
+.form-row {
+    display: flex;
+    flex: auto;
+    text-align: left;
+    gap: 20px;
+}
+
+label {
+    display: block;
+}
+
+fieldset {
     background-color: var(--secondary-bg);
+}
+
+fieldset h2 {
+    text-align: left;
 }

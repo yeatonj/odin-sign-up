@@ -27,7 +27,49 @@
         </div>
 
         <div class="form-container">
-            This is where the form will go
+            <form action="/page" method="post"></form>
+            <fieldset>
+                <h2 class="form-title">
+                    Let's do this!
+                </h2>
+
+                <div class="form-row">
+                    <div class="input-wrap">
+                        <label for="first">First Name</label>
+                        <input type="text" name="first" id="first">
+                    </div>
+
+                    <div class="input-wrap">
+                        <label for="last">Last Name</label>
+                        <input type="text" name="last" id="last">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-wrap">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+
+                    <div class="input-wrap">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-wrap">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd">
+                    </div>
+
+                    <div class="input-wrap">
+                        <label for="pwd-confirm">Password</label>
+                        <input type="password" name="pwd-confirm" id="pwd-confirm">
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
         </div>
 
         <div class="login-container">
